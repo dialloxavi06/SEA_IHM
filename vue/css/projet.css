@@ -1,0 +1,237 @@
+body {
+   
+    font : 1em roboto;
+    color : #000000;
+    text-align : left;
+    margin-left : 10%;
+    margin-right : 10%;
+    
+}
+.titre_General{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 40px;
+
+}
+.titel_abonnement_liste{
+    background-color: dimgrey;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+}
+.abonnement_liste{
+width: 100%;
+height: auto;
+
+background-color: #eaeaeaf4;
+}
+.table_abonnement_liste{
+    margin-top: -15px;
+    border: black 2px solid;
+    height: 200px;
+}
+#table_modifi{
+    margin-top: -17px;
+}
+
+input[type=button]{
+    margin-top: 20px;
+    cursor : pointer;
+    font-size : 1.05em;
+    font-weight: 500;
+    border : none;
+    background-color: #00b0ff;
+    color : #000000;
+    border-radius: 5px;
+    width: 85px;
+    height: 30px;
+
+    margin-bottom: 20px;
+}
+input[type=button]:hover {
+    background-color: #0000ff;
+    border : 1px solid #ffffff;
+    color : #ffffff;
+}
+input[type=button].btnalerte {
+    background-color: #ff7000;
+}
+input[type=button].btnalerte:hover {
+    background-color: #ff0000;
+    border : 1px solid #ffffff;
+    color : #ffffff;
+}
+input[type=button].btndetail {
+    background-color: #00ff00;
+    margin-left :65%;
+
+}
+input[type=button].btndetail:hover {
+    background-color: #00D000;
+    border : 1px solid #ffffff;
+    color : #ffffff;
+}
+/* //// abonnement_edit///////// */
+.abonnement_edit{
+    color: rgb(122, 116, 116);
+    font-weight: 500;
+    width: 100%;
+    height: auto;  
+    background-color: #eaeaeaf4;
+
+}
+.div_titre_abonnement_detail{
+    background-color: dimgrey;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#partie_abonnement_detail{
+    color: rgb(122, 116, 116);
+    font-weight: 500;
+    width: 100%;
+    height: auto;  
+    background-color: #eaeaeaf4;
+
+
+}
+.div_titre_deux{
+    background-color: dimgrey;
+    width: 25%;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+
+}
+.div_numero_date{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+.edt_date_abonnement{
+    margin-left: 30px;
+
+}
+.edt_commentaire{
+
+    margin-left:9.4%;
+
+}
+.affich_numero_adherent_info{
+    margin-left: 30px;
+
+}
+
+.div_abonnement_theme_affich_edit{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    
+}
+.div_prix_total{
+
+    margin-bottom: 20px;
+    background-color:dimgrey ;
+    color: white;
+}
+table{
+    width: 100%;
+}
+.div_abonnement_theme_edit{
+
+    margin-top: 10px;
+    margin-left: 5px;
+    
+}
+#table_detail{
+    height: 150px;
+    background-color: white;
+    border: black 2px solid;
+}
+.div_abonnement_theme_choisir{
+    margin-bottom: 5px;
+    background-color:dimgrey ;
+    color: white;
+}
+select{
+    border: blue solid 1px;
+    margin : 0;
+padding-left : 15px;
+color : #000000;
+cursor : pointer;
+font-size : 1.1em;
+
+}
+
+select option:hover {
+background-color: #00b0ff;
+}
+
+.div_version_valider{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    
+}
+.labelerreur {
+    text-align : left;
+    font-size : 0.9em;
+    color : #ff0000;
+    font-style : italic;
+    margin-left : 10px;
+}
+#btn_abonnement_reture{
+    margin-left: 45%;
+    background-color: rgb(101, 180, 101);
+}    
+.error{
+
+    margin-left: 30%;
+    color: red;
+    font-weight: bolder;
+}
+.les_choix{
+    margin-left: 25%;
+}
+.divaction{
+
+}
+.valider_annuler{
+    margin-left: 80%;
+
+}
+tr:nth-child(odd){
+    background-color: lightgray;
+}
+#btn_abonnement_true_modifi{
+    background: url(/vue/css/images/valider.jpg)no-repeat center center;
+    background-size: contain;
+   
+
+}
+#btn_abonnement_false_modifi{
+    background: url(/vue/css/images/annuler.jpg)no-repeat center center;
+    background-size: contain;
+    margin-left: -15%;
+
+}
+#btn_abonnement_retour_detail{
+    background-color: #00D000;
+    margin-left: 90%;
+}
+#btn_abonnement_retour_detail:hover{
+background-color: #00ff00;
+
+}
+.affich_numero_adherent_info{
+    height: 50px;
+}
+.adherant_info_modifi{
+    border: gray 1px solid;
+    height: 40px;
+
+    
+}

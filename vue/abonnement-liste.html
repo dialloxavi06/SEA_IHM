@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/projet.css">
+    <title>abonnement_liste</title>
+</head>
+<body>
+    <div class="titre_General"><h3>Gestion des Abonnements</h3></div>
+    <div class="abonnement_liste">
+        <div  class="titel_abonnement_liste" id="titel_abonnement_liste"> Liste des abonnements</div>
+        <table id="table_abonnement_liste" class="table_abonnement_liste" width="100%"  >
+            <thead>
+                <tr >
+                    <th>Numéro</th>
+                    <th>Le</th>
+                    <th>Adherent</th>
+                    <th>CSP</th>
+                    <th>Adhésion</th>
+                    <th>Montant</th>
+                </tr>
+            </thead>
+            <br>
+            <tbody>
+
+            </tbody>
+
+        </table>
+        
+        <div class="divaction">
+            <input id="btn_abonnement_detail" type="button" class='btndetail' value="Détail"></a>
+            <input id="btn_abonnement_ajouter" type="button" value="Ajouter">
+            <input id="btn_abonnement_modifier" type="button" value="Modifier">
+            <input id="btn_abonnement_supprimer" type="button" class='btnalerte' value="Supprimer">
+        </div>
+            
+    </div>
+    <!-- ///////////////ajout//////////////// -->
+    <div  id="partie_abonnement_edit" class="abonnement_edit">
+        <div  id="div_titre_abonnement_edit" class="div_titre_abonnement_detail">Nouvel  abonnement </div>
+        <div class="div_titre_deux">IDENTIFICATION</div>
+    
+        <div class="div_numero_date">
+            <label for="edt_numero_abonnement">numéro</label>
+            <span><input id="edt_numero_abonnement" placeholder="1" size="3" type="number"></span>
+            <label  class="edt_date_abonnement" for="edt_date_abonnement">le</label>
+            <span><input id="edt_date_abonnement" placeholder="libellé non obligatoire" size="30" type="date"></span>
+        </div>
+
+
+
+
+        <div >
+            <label class="edt_commentaire" for="edt_commentaire">commentaire</label>
+            <textarea id="edt_commentaire" rows="3"  placeholder= "ne sought pas une une relance à la fin de son abonnement"></textarea>
+        </div>
+            <div class="div_titre_deux">ADHERENT</div>
+            <label id="numero_adherent_error" class="error"><i>il faut saisir le noméro d'adherent</i></label>
+        <div class="edt_numero_adherent_info">
+            <label for="edt_numero_adherent">numéro</label>
+            <span><input id="edt_numero_abonnement" placeholder="2" size="3" type="number"></span>
+            
+        </div>
+        <div>
+            <div class="div_titre_deux" >ADHESION</div>
+            <label id="numero_adhesion_error" class="error"><i>l'abonnement doit comporter au moins un thème</i> </label>
+        </div>
+        <div class="div_abonnement_theme_affich_edit">
+            <div class=" div_abonnement_theme_affich">
+                <div id="affich_prix_total" class="div_prix_total"> Total: 00.00 £</div>
+                
+                </div>
+            </div>
+            <div class="les_choix">
+                <input id="btn_ajout_ajouter" type="button" value="Ajouter">
+                <input id="btn_ajout_modifier" type="button" value="Modifier">
+                <input id="btn_ajout_supprimer" type="button" class='btnalerte' value="Supprimer">
+            </div>
+            <hr>
+            <div class="valider_annuler">
+                <input id="btn_ajout_valider" type="button" class='btnvalider' value="valider">
+                <input id="btn_ajout_annuler" type="button" class='btnalerte' value="Annuler">
+            
+        </div>
+    </div>
+        <!-- /////////////////detail/////////////////// -->
+    <div id="partie_abonnement_detail">
+        <div class="detail">
+        <div class="div_titre_abonnement_detail">Détail d'un abonnement </div>
+        <div class="div_titre_deux">IDENTIFICATION</div>
+    
+        <div class="div_numero_date">
+            <label for="edt_numero_abonnement_detail">numéro</label>
+            <span><input id="edt_numero_abonnement_detail" placeholder="1" size="3" type="number"></span>
+            <label  class="edt_date_abonnement" for="edt_date_abonnement_detail">le</label>
+            <span><input id="edt_date_abonnement_detail" placeholder="libellé non obligatoire" size="30" type="date"></span>
+        </div>
+        <div >
+            <label class="edt_commentaire" for="edt_commentaire_detail">commentaire</label>
+            <textarea id="edt_commentaire_detail" rows="3"  placeholder= "ne sought pas une une relance à la fin de son abonnement"></textarea>
+        </div>
+        <div class="div_titre_deux">ADHERENT</div>
+        <div class="affich_numero_adherent_info">
+            <label for="affich_numero_abonnement_detail">numéro</label>
+            <span><input id="affich_numero_abonnement_detail" placeholder="2" size="3" type="number"></span>
+            <span id="adherant_info_modifi" class="adherant_info">Mme CREZINAS Albertine</span>
+        </div>
+        <div class="div_titre_deux">ADHESION</div>
+            <div class=" div_abonnement_theme_affich">
+                <div id="affich_prix_total" class="div_prix_total"> Total: 20.00 £</div>
+                <div  class="table">
+                    <table id="table_detail">
+                        <thead>
+                            <tr>
+                                <th>libellé</th>
+                                <th>Tarif de base</th>
+                                <th>Version Papier</th>
+                                <th>Montant</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                    </table>
+                    
+                </div>
+                <br>
+                <input id="btn_abonnement_retour_detail"  value="Retour"type="button" >
+
+
+            </div>
+    </div>
+    <!-- ///////////modif//////////////// -->
+    <div id="partie_abonnement_modifi" class="abonnement_edit">
+        <div class="div_titre_abonnement_detail">Modification d'un abonnement </div>
+        <div class="div_titre_deux">IDENTIFICATION</div>
+    
+        <div class="div_numero_date">
+            <label for="edt_numéro_abonnement_modifi">numéro</label>
+            <span><input id="edt_numéro_abonnement_modifi" placeholder="1" size="3" type="number"></span>
+            <label  class="edt_date_abonnement" for="edt_date_abonnement_modifi">le</label>
+            <span><input id="edt_date_abonnement_modifi" placeholder="libellé non obligatoire" size="30" type="date"></span>
+        </div>
+        <div >
+            <label class="edt_commentaire" for="edt_commentaire_modifi">commentaire</label>
+            <textarea id="edt_commentaire_modifi" rows="3"  placeholder= "ne sought pas une une relance à la fin de son abonnement"></textarea>
+        </div>
+        <div class="div_titre_deux">ADHERENT</div>
+        <div class="affich_numero_adherent_info">
+            <label for="affich_numero_abonnement_modifi">numéro</label>
+            <span><input id="affich_numero_abonnement_modifi" placeholder="2" size="3" type="number"></span>
+            <span class="adherant_info_modifi">Mme CREZINAS Albertine</span>
+        </div>
+        <div class="div_titre_deux">ADHESION</div>
+
+        <div class="div_abonnement_theme_affich_edit">
+            <div class=" div_abonnement_theme_affich">
+                <div id="affich_prix_total_modifi" class="div_prix_total"> Total: 20.00 £</div>
+                <div class="table">
+                    <table id="table_modifi">
+                        <thead>
+                            <tr>
+                                <th>libellé</th>
+                                <th>Tarif de base</th>
+                                <th>Version Papier</th>
+                                <th>Montant</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class=" div_abonnement_theme__modifi">
+                <div class=" div_abonnement_theme_choisir">Choisir un théme dans la liste</div>
+                <div class="div_version_valider">
+                    <div > <select id="select_theme_modifi" size="4">
+                        <option value="option1">manga</option>
+                        <option value="option2">cpmédie</option>
+                        <option value="option3">action</option>
+                        <option value="option3">fantastique</option>
+                        <option value="option3">sport</option>
+                        <option value="option3">aventure </option>
+                    </select> </div>
+                    <div>
+                        <label for="version_papier">Version Papier</label>
+                        <input type="checkbox" id="version_papier_modifi" >
+                        <div >
+                            <input id="btn_abonnement_true_modifi" type="button" >
+                            <input id="btn_abonnement_false_modifi"  type="button" >
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
+            
+        </div>
+        <div class="les_choix">
+            <input id="btn_abonnement_ajouter_modifi" type="button" value="Ajouter">
+            <input id="btn_abonnement_modifier_modifi" type="button" value="Modifier">
+            <input id="btn_abonnement_supprimer_modifi" type="button" class='btnalerte' value="Supprimer">
+        
+        </div>
+        <hr>
+        <div class="valider_annuler">
+            <input id="btn_abonnement_valider_modifi" type="button" class='btnvalider' value="valider">
+            <input id="btn_abonnement_annuler_modifi" type="button" class='btnalerte' value="Annuler">
+        </a>
+        </div>
+    </div>
+</body>
+<script type="module" src="../controleur/ma_liste.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
